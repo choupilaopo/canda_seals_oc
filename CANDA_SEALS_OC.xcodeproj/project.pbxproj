@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54268BEFB04B26A5DBA2B90D /* Pods_CANDA_SEALS_OC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA908D2132D41663BD3A1B20 /* Pods_CANDA_SEALS_OC.framework */; };
 		BC26CE4E29921ECC00423FB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26CE4D29921ECC00423FB4 /* AppDelegate.m */; };
 		BC26CE5429921ECC00423FB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC26CE5329921ECC00423FB4 /* ViewController.m */; };
 		BC26CE5729921ECC00423FB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC26CE5529921ECC00423FB4 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD2B556E2AF85B4C7473C60 /* Pods-CANDA_SEALS_OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CANDA_SEALS_OC.release.xcconfig"; path = "Target Support Files/Pods-CANDA_SEALS_OC/Pods-CANDA_SEALS_OC.release.xcconfig"; sourceTree = "<group>"; };
+		3F65B8FDEFC67628782A48C2 /* Pods-CANDA_SEALS_OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CANDA_SEALS_OC.debug.xcconfig"; path = "Target Support Files/Pods-CANDA_SEALS_OC/Pods-CANDA_SEALS_OC.debug.xcconfig"; sourceTree = "<group>"; };
+		AA908D2132D41663BD3A1B20 /* Pods_CANDA_SEALS_OC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CANDA_SEALS_OC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC26CE4929921ECC00423FB4 /* CANDA_SEALS_OC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CANDA_SEALS_OC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC26CE4C29921ECC00423FB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BC26CE4D29921ECC00423FB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54268BEFB04B26A5DBA2B90D /* Pods_CANDA_SEALS_OC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1E54F46CFF701DF51A7D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA908D2132D41663BD3A1B20 /* Pods_CANDA_SEALS_OC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BC26CE4029921ECC00423FB4 = {
 			isa = PBXGroup;
 			children = (
 				BC26CE4B29921ECC00423FB4 /* CANDA_SEALS_OC */,
 				BC26CE4A29921ECC00423FB4 /* Products */,
+				E0745FCAE9AED7272469B021 /* Pods */,
+				8C1E54F46CFF701DF51A7D3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,16 @@
 			path = CANDA_SEALS_OC;
 			sourceTree = "<group>";
 		};
+		E0745FCAE9AED7272469B021 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F65B8FDEFC67628782A48C2 /* Pods-CANDA_SEALS_OC.debug.xcconfig */,
+				0AD2B556E2AF85B4C7473C60 /* Pods-CANDA_SEALS_OC.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC26CE6229921ECD00423FB4 /* Build configuration list for PBXNativeTarget "CANDA_SEALS_OC" */;
 			buildPhases = (
+				DBB38F01C5C3D272299FA424 /* [CP] Check Pods Manifest.lock */,
 				BC26CE4529921ECC00423FB4 /* Sources */,
 				BC26CE4629921ECC00423FB4 /* Frameworks */,
 				BC26CE4729921ECC00423FB4 /* Resources */,
+				2A9E0B801AE74DB71DC24B8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9E0B801AE74DB71DC24B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CANDA_SEALS_OC/Pods-CANDA_SEALS_OC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CANDA_SEALS_OC/Pods-CANDA_SEALS_OC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CANDA_SEALS_OC/Pods-CANDA_SEALS_OC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB38F01C5C3D272299FA424 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CANDA_SEALS_OC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BC26CE4529921ECC00423FB4 /* Sources */ = {
@@ -281,6 +350,7 @@
 		};
 		BC26CE6329921ECD00423FB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F65B8FDEFC67628782A48C2 /* Pods-CANDA_SEALS_OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		BC26CE6429921ECD00423FB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AD2B556E2AF85B4C7473C60 /* Pods-CANDA_SEALS_OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

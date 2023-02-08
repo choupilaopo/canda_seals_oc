@@ -1,0 +1,16 @@
+PODS:
+  - SealsHomeModule (0.1.0)
+
+DEPENDENCIES:
+  - SealsHomeModule (from `./SealsHomeModule`)
+
+EXTERNAL SOURCES:
+  SealsHomeModule:
+    :path: "./SealsHomeModule"
+
+SPEC CHECKSUMS:
+  SealsHomeModule: c8f8971a7bbb1fe0a3e8214f779c0fef5cec77f3
+
+PODFILE CHECKSUM: e24e5873b0d5ad2afb5b92d1a8e7b4ba2d8b0451
+
+COCOAPODS: 1.11.3
